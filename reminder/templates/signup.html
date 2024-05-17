@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    {% load crispy_forms_tags %}
+
+    
+    <head><title>CREATE ACCOUNT</title></head>
+    <body>
+        <form method="post" action="">
+            {% csrf_token %}
+<table>
+    {% crispy form  %}
+    
+</table>
+<p><input type="submit" class = "btn btn-primary" value="Create Account"></p>
+<p>Already have an Accounts? <a href="{% url 'login' %}">SIGN IN</a></p>
+
+        </form>
+    </body>
+</html>

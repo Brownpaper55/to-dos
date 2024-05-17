@@ -1,0 +1,17 @@
+
+<html>
+    
+    <head><title> Login</title></head>
+<body>
+
+    <form method="post" >
+        {% csrf_token %}
+        {{form.as_p}}
+    
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <P> Don't have an accounts?<a href={% url 'signup' %}>Sign up</a></P>
+</body>   
+</html>

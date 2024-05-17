@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% load crispy_forms_tags %}
+<html>
+    <head><title> Create Task</title></head>
+    <body>
+        <body>
+            <form method="post" action="">
+                {% csrf_token %}
+    <table>
+        {% crispy form  %}
+        
+    </table>
+    <p><input type="submit" class = "btn btn-primary" value="Update Task"></p>
+    
+    
+            </form>
+    </body>
+</html>

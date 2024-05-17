@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+    <head><title> Create Task</title></head>
+    
+        <body>
+            <form method="post" action="">
+                {% csrf_token %}
+    <table>
+        {% crispy form  %}
+        
+    </table>
+    <p><input type="submit" class = "btn btn-primary" value="Create Task"></p>
+    
+    
+            </form>
+    </body>
+{% endblock %}
